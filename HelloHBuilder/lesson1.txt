@@ -1,0 +1,89 @@
+﻿/*注：本教程针对HBuilder2.1.0，制作日期2014-03-28*/
+创建HTML结构： h t ↵
+中途换行： 'Ctr+↵'
+设置charset： m 6 ↵
+引用外部js： s 2 '↵ ' 'Ctr+↵'
+创建js区块： s '↵ '
+创建函数： f u n 3 或者 f u n n '↵ '
+为函数命名：W h o i s E
+跳转到函数末尾： End 'Alt+[' ↓ 'Ctr+↵'
+创建style节点： s t '↵ ' ↓ 'Ctr+↵'
+引用外部css： l '↵' '↵'
+跳转到下一个可编辑区： 'Alt+↓'
+创建img标签： i m '↵ ' '↵ ' 'Ctr+↵'
+插入换行符： 'Shift+↵' ↵
+创建div： d i '↵ ' d 1 → Space c '↵' '↵'
+转到class的定义处（按Ctrl点击也可以）：'Ctrl+Alt+d'
+关闭标签页：'Ctrl+w'
+添加自定义属性： → Space d 7  t e s t Tab 1
+合并下行：'Ctrl+Alt+j' 'Ctrl+↵'
+创建超链接： a '↵' '↵'  → Space i '↵' a 1
+使用选择助手(如果快捷键冲突,可使用Alt+S U)：'Ctrl+Alt+←' 'Ctrl+Alt+←' 'Ctrl+Alt+←'
+重新修改链接指向新创建的a1： BackSpace 'Alt+/' '↵' 'Ctr+↵'
+创建ul： u '↵' 
+行尾回车添加可重复的标签li： End '↵'
+折叠代码：'Ctrl+Alt+-' 'Ctrl+Shift+Enter' Tab
+没有代码块时，使用emmet语法创建标签：n a v Tab
+使用shift转码输入空格：'Shift+Space' （如果与输入法快捷键冲突，也可输入& n 2）
+创建按钮：'Ctrl+↵' '↵'  i n '↵' '↵' Tab Tab w h o Space i s Space e →
+添加点击事件：  Space o n c k '↵' w h o '↵' →
+使用转到定义到js函数：'Ctrl+Alt+D' ↓
+定义一个变量e： v a r Space e ; '↵'
+为e赋值1：e Space = Space  d o '↵' . g 6 " '↵'
+使用回车或Tab跳转光标到绿色竖线（若没有绿色竖线请使用End到行尾）：'↵' ; '↵'
+为e赋值2：e Space = Space  d o '↵' . g 8 " d 8 '↵' ; '↵'
+为e赋值3(这个代码块很常用，也可以使用dg回车)：e Space = Space  $ (或者dg) '↵' 2 '↵' ; '↵'
+为e设置algin属性： e . s e 2 " a l '↵' → , " c '↵' '↵' ; '↵'
+设置自定义属性：e . s e 2 " d '↵' → , " 2 '↵' ; '↵'
+提示字体列表： e . s t '↵' . f o 2 = " '↵' '↵' ; '↵'
+提示图片列表： e . s t '↵' . b 6 = " 8 '↵' ; '↵'
+还能这么写css： e . s t '↵' . c s 2 = " b 7 8 '↵' ; '↵'
+写switch对e判断：s w 2 e . s t '↵' . d i s '↵' Tab " w '↵'
+跳转到switch结尾（有绿色竖线）'↵' '↵'
+写if代码块：i f f '↵' (或者使用i f 2)
+为if添加条件判断：e . g e t a t '↵' " c '↵' '↵' ! = " '↵' ↓
+设置e的样式：e . c l 2 (此处也可以用c l n) = " '↵' '↵' ; ↓ '↵'
+js里可以提示html： e . i n n '↵' = " < f o '↵' Space c o '↵' '↵' '↵' ; '↵' 
+为e赋值4：e Space = Space $ '↵' '↵' '↵' ; '↵'
+给a标签加链接地址：e . h r '↵' =  " '↵' '↵' ; '↵'
+给a标签加target：e . t 5 =  " '↵' '↵' ; '↵'
+为e赋值5：e Space = Space n e w Space i m  '↵' ; '↵'
+为img增加图片： e . s r '↵' = " '↵' '↵' ; '↵'
+为e赋值6：e Space = Space w i '↵' . i '↵' Space | | Space w i '↵' . w 6 Space | | Space w i '↵' . m s 3 Space | | Space w i '↵' . m o 2 ; '↵' 
+确认e可别浏览器识别：i f f '↵' (也可以使用i f 2) t y 3 e '↵' ↓
+执行indexdb的方法：e . o p '↵' " t e s t '↵' ; ↓ '↵'
+定义head变量：v a r Space h e a d Space = Space d o '↵' . g 8 " h e '↵' '↵' [ 0 → ; '↵'
+with里也可以提示： w i t h h (或者w i t 2) h '↵' ↓
+获取head的最后一个子节点：v a r Space l = Space l e c '↵' ; 'Ctr+↵'
+去掉该子节点：r e m 6 l → ; ↓ '↵'
+动态生成一个css文件引用：e Space = Space d c '↵' l 5 '↵' ; '↵'
+添加属性：e . r 3 =  " s t y '↵' '↵' ; '↵'
+设置type： e . t y '↵' = " c '↵' '↵' ; '↵'
+设置media：e . m '↵' = " s 2 '↵' ; '↵'
+设置href：e . h r '↵' = " . c '↵' '↵' ; '↵'
+将e加入head中：h '↵' . a p '↵' e '↵' '↵' ; '↵'
+定义一个变量s：v a r s '↵' Tab e Space i s Space 'Ctrl+↵'
+判断e的属性：i f e '↵' e . g 2 " d '↵' '↵' = = n u 2 ↓
+为s赋值：s = s + e . o u '↵' ; 'Alt+↓'
+为s赋值：s = s + " u n k n o w → ; ↓ '↵'
+将s打印出来：a l '↵' s  
+选择s并转到定义：'Shift+←' 'Ctrl+Alt+D'
+重构s的命名为ss：'Ctrl+F2' '↵' s s '↵' '↵'
+跳转到函数末尾：'Alt+↓' 'Alt+↓' '↵'
+添加一个启动事件(提示自定义函数的jsdoc)： a d '↵' " l o 5 → , f u n a '↵' (此处也可以是f u 6) ↓ f i n i '↵' 1
+选下一个HTML节点(如果快捷键冲突,可使用Alt+S D)：'Ctrl+Alt+→'
+跳转到CSS：'Alt+↓'
+给body加样式：b o '↵' { '↵'
+增加textalign：t c Tab '↵'
+模糊匹配增加user-select：u s e r 9 5 ;
+写下一个样式：↓ '↵'
+为input增加样式：i n '↵' [ t y '↵' = '↵' → { '↵'
+使用代码块设置宽度：w 9 9 0  ↓ '↵'
+为ul加样式：u l { d n '↵' 'Ctrl+↵'
+ID也可以提示：# 2 { '↵'
+提示字体列表：f f 3 '↵'
+回车自动补行尾分号：'↵'
+增加background-image：b i '↵' 8
+大功告成，保存并运行起来看看：'Ctrl+s' 'Ctrl+r'
+如果你屏幕够宽，也可以点击右上角视图切换，换到边改边看视图Ctrl+P，左边保存右边自动刷新
+
