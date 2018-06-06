@@ -2,99 +2,70 @@
 <html>
 	<head>
 		<meta charset="utf-8" />
-		<title>创建表单</title>
+		<title></title>
 		<style type="text/css">
 			*{
 				margin: 0px;
+				border: 0px;
 				padding: 0px;
-				box-sizing: border-box;
+			}
+			body{
+				background: skyblue;
 			}
 			form{
 				width: 500px;
-				height: 700px;
-				background-color: deepskyblue;
+				height: 300px;
 				position: absolute;
 				margin: auto;
 				left: 0px;
 				right: 0px;
 				top: 0px;
 				bottom: 0px;
-				padding-top: 20px;
+				box-shadow: 0px 0px 10px 1px rgba(0,0,0,.5);
 				text-align: center;
+				background-color: #fff;
 			}
-			form div{
-				margin: 15px 0px;
+			h3{
+				margin: 10px 0px;
 			}
-			form input[type="submit"]{
-				width: 100px;
-				margin-top: 20px;
+			input{
+				width: 75%;
+				height: 30px;
+				line-height: 30px;
+				margin: 10px 0px;
+				border: 1px dashed lightblue;
+				text-indent: 1em;
+			}
+			input[type="submit"]{
+				width: 40%;
+				height: 40px;
+				line-height: 40px;
+				position: absolute;
+				left: 30%;
+				right: 30%;
+				bottom: -30px;
+				background-color: rgba(70,70,115,.8);
+				border: none;
+				box-shadow: 0px 3px rgba(50,50,100,.5),1px 1px 4px 0 rgba(0,0,0,.5);
+				text-indent: 0;
+				color: #fff;
+				
+				transition: width 2s;
+			}
+			input:hover{
+				border: 1px solid lightblue;
+				box-shadow: 0px 0px 6px 0px rgba(0,0,0,.5) inset;
+				width: 100%;
 			}
 		</style>
 	</head>
 	<body>
-		<form action="http://10.100.100.80/server.php" method="post">
-			<div>
-				<label for="username">用户名</label>
-				<input type="text" name="username" id="username" />
-			</div>
-			<div>
-				<label for="psw">密&nbsp;&nbsp;码</label>
-				<input type="password" name="pwd" id="pwd" />
-			</div>
-			<div>
-				<label for="sex">性&nbsp;&nbsp;别</label>
-				<input type="radio" name="sex" checked="checked" />男
-				<input type="radio" name="sex"/>女
-			</div>
-			<div>
-				<label for="hobby">兴&nbsp;&nbsp;趣</label>
-				<input type="checkbox" />唱歌
-				<input type="checkbox" />打篮球
-				<input type="checkbox" />游泳
-			</div>
-			<div>
-				<label for="e_mail">邮&nbsp;&nbsp;箱</label>
-				<input type="email" name="e_mail" id="email" />
-			</div>
-			<div>
-				<label for="website">个人网址</label>
-				<input type="url" name="user_url" />
-			</div>
-			<div>
-				<label for="telephone">电话号码</label>
-				<input type="tel" name="telphone" pattern="^\d{11}$" />
-			</div>
-			<div>
-				<label for="searchinfo">关键词</label>
-				<input type="search" name="searchinfo" />
-			</div>
-			<div>
-				<label for="color1">颜&nbsp;&nbsp;色</label>
-			<input type="color"name="color1" />
-			<input type="color" name="color2" value="#ff3e96" />
-			</div>
-			<div>
-				<label for="number1">数&nbsp;&nbsp;值</label>
-				<input type="number" name="number1" value="0" min="0" max="200" step="2" />
-			</div>
-			<div>
-				<input type="date" />&nbsp;
-				<input type="month" />&nbsp;
-				<input type="week" />&nbsp;
-				<input type="time" />&nbsp;
-				<input type="datetime" />&nbsp;
-				<input type="datetime-local" />
-			</div>
-			<div>
-				<label for="upload">上传头像</label>
-				<input type="file" /><br /><br />
-				<input type="submit" value="提交" />
-				<input type="reset" value="重置" />
-				<input type="button" value="普通按钮" />
-				<input type="image" src="img/1.jpg" />
-				<input type="hidden" />
-			</div>
-			
+		<form action="#" method="post">
+			<h3>个人信息</h3>
+			<input type="text" id="name" placeholder="请输入您的姓名" />
+			<input type="text" id="age" placeholder="请输入您的年龄" />
+			<input type="text" id="mail" placeholder="请输入您的邮箱" />
+			<input type="submit" value="提交信息" />
 		</form>
 	</body>
 </html>
