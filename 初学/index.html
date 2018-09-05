@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+	</head>
+	<script>
+		var password = prompt('请输入三位姓名密码:');
+		if (password == '朱浜浜鲍华明倪啸亮'){
+			alert('密码输入正确!');
+		}else{
+			alert('密码输入错误!');
+		}
+	</script>
+	<body>
+		<p id="a" style="color:lightblue">请选择页网背景色</p>
+<script type="text/javascript">
+	var a=document.getElementById("a");
+	a.style.color="lightblue";
+</script>
+<input type="button" value="红色" onclick="Color('red')" />
+<input type="button" value="绿色" onclick="Color('green')" />
+<input type="button" value="蓝色" onclick="Color('blue')" />
+<input type="color" id="Color" value="#ff0000" onchange="RandomColor()" />
+<script type="text/javascript">
+	function Color(color){
+		document.body.style.backgroundColor=color;
+	}
+	function RandomColor(){
+		var Color=document.getElementById("Color");
+		document.body.style.backgroundColor=Color.value;
+	}
+</script>
+	</body>
+</html>
