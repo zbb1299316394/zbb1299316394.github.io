@@ -5,12 +5,12 @@
 		<title></title>
 		<style type="text/css">
     .zoomPic {
-	width: 350px;
+	width: 300px;
 	margin: 20px;
     }
     .zoomHandler {
 	position: fixed;
-    border-radius:100%;
+    border-radius:70%;
 	transform: translate(-50%, -50%);
 	pointer-events: none;
     }
@@ -41,7 +41,7 @@
 		})(i));
 		zoom[i].addEventListener("mousemove", (function(n) {
 			return function(event) {
-				if(ratio[n] <=0) {
+				if(ratio[n] <=1) {
 					return false;
 				}
 				var event = event || window.event;
@@ -57,7 +57,7 @@
 				zoomHandler.style.left = cx + "px";
 				zoomHandler.style.top = cy + "px";
 				zoomHandler.style.backgroundImage = 'url(' + target.src + ')';
-				zoomHandler.style.backgroundPosition = (-ratio[n] * ox + zoomShowWidth ) + "px " + (-ratio[n] * oy + zoomShowHeight ) + "px";
+				zoomHandler.style.backgroundPosition = (-ratio[n] * ox + zoomShowWidth/2 ) + "px " + (-ratio[n] * oy + zoomShowHeight/2 ) + "px";
 				zoomHandler.style.display = "block";
 			}
 		})(i));
