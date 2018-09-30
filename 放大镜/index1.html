@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style type="text/css">
+			body{
+				background-color: aliceblue;
+			}
+			.zoomer{
+				width: 450px;
+				position: relative;
+			}
+			.zoomer img{
+				width: 100%;
+			}
+			.zoomerHandler{
+				width: 200px;
+				height: 200px;
+				border-radius: 50%;
+				position: absolute;
+				left: 0;
+				top: 0;
+				margin: -75px 0 0 -75px;
+				background: url(img/FE.jpg)url(img/1.jpg)url(img/2.jpg)url(img/3.jpg)url(img/4.jpg)url(img/5.jpg);
+				background-position: -150px -150px;
+				opacity: 0;
+				transition: opacity .5s;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="zoomer">
+			<img src="img/FE.jpg" alt="" />
+			<div class="zoomerHandler">
+		</div>
+			<script type="text/javascript">
+				var oZoomer=document.getElementsByClassName("zoomer")[0];
+			var oZooerH=document.getElementsByClassName("zoomerHandler")[0];
+			function add () {
+				oZooerH.style.opacity=1;
+				oZoomer.addEventListener("mousemove",move);
+			}
+			function out () {
+				oZooerH.style.opacity=0;
+				oZooerH.removeEventListener("mousemove",move);
+			}
+			function move (event) {
+				var event=event||window.event;
+				var oZoomerX=oZoomer.getBoundingClientRect().left;
+				var oZoomerY=oZoomer.getBoundingClientRect().top;
+				var oZooerHX=oZooerH.getBoundingClientRect().left;
+				var oZooerHY=oZooerH.getBoundingClientRect().top;
+				var oZHOX=oZooerHX-oZoomerX;
+				var oZHOY=oZooerHY-oZoomerY;
+				oZooerH.style.left=event.pageX-oZoomerX+"px";
+				oZooerH.style.top=event.pageY-oZoomerY+"px";
+				oZooerH.style.backgroundPositionX=-2.4422*oZHOX-75+"px";
+				oZooerH.style.backgroundPositionY=-2.4422*oZHOY-75+"px";
+			}
+			oZoomer.addEventListener("mouseover",add);
+			oZoomer.addEventListener("mouseout",out);
+			</script>
+		</div>
+	</body>
+</html>
